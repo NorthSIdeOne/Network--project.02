@@ -1,0 +1,68 @@
+8
+Router1
+192.0.1.1
+1
+pc1
+192.0.1.2
+1
+Router2
+192.0.2.1
+1
+pc1
+192.0.2.2
+1
+Router3
+192.0.3.1
+1
+pc1
+192.0.3.2
+1
+Router4
+192.0.4.1
+1
+pc1
+192.0.4.2
+1
+Router5
+192.0.5.1
+1
+pc1
+192.0.5.2
+1
+Router6
+192.0.6.1
+1
+pc1
+192.0.6.2
+1
+Router7
+192.0.7.1
+1
+pc1
+192.0.7.2
+1
+Router8
+192.0.8.1
+1
+pc1
+192.0.8.2
+1
+10
+Router1 Router4 1
+Router4 Router7 20
+Router4 Router3 1
+Router3 Router6 3
+Router3 Router2 1
+Router3 Router5 2
+Router5 Router2 2
+Router8 Router6 2
+Router2 Router8 5
+Router8 Router7 3
+7
+trace 192.0.1.2 192.0.7.2
+add 192.0.5.1 192.0.7.1 4
+trace 192.0.1.2 192.0.7.2
+add 192.0.1.1 192.0.3.1 8
+lc 192.0.4.1 192.0.3.1
+lc 192.0.5.1 192.0.7.1
+trace 192.0.1.2 192.0.7.2
